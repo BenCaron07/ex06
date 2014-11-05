@@ -59,7 +59,7 @@ NamesList(var param)
       under8.add(names);
     }
   }    
-  return "Names with over 8 letters: $over8, Names with under 8 letters: $under8, Names with 8 letters: $equal8";
+  return "Names shorter than 8 letters: $under8, Names longer than 8 letters: $over8, Names that are 8 letters long: $equal8";
 }
 
 //function for exercise 6.5
