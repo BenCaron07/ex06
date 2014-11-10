@@ -1,0 +1,37 @@
+ex06
+
+14/20
+
+-1
+attention: formatage (voir: https://www.dartlang.org/articles/style-guide/)
+NamesList(var param)
+-->
+namesList(var param)
+
+-1 
+se il vous plaît, utiliser les types pour des paramètres de fonctions
+namesList(var param)
+
+6.1
+word: Jeremy
+Is the word a palindrome, true or false ? false
+-1
+afficher un mot avec le résultat true
+
+6.3
+Exercise 6.3
+A+
+A-
+B
+C-
+D
+-1
+quels sont les chiffres?
+
+6.5
+-1
+Prepare two lists, one with the names of players and their CLUBS
+-1
+se il vous plaît ne pas utiliser les positions d'éléments de la liste 
+pour faire une correspondance entre les clubs et les joueurs
+
