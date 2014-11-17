@@ -45,9 +45,9 @@ String getLetterGrade(int numberGrade, Map standard) {
 //function for exercise 6.4
 NamesList(var param)
 {
-  var under8 = new List();
-  var equal8 = new List();
-  var over8 = new List();
+  List under8 = new List();
+  List equal8 = new List();
+  List over8 = new List();
   var copyInputNames = param;
   
   for (var names in param) {
@@ -63,10 +63,30 @@ NamesList(var param)
 }
 
 //function for exercise 6.5
-Map teamRoster(List players, List teams) {
-  var map = new Map();
-  for (var i = 0; i < 3; i++) {
-    map [teams[i]] = players[i];
+Map<String, List<String>> teamRoster(Map players, List<String> teams) {
+  Map<String, List<String>> teamsList = new Map();
+  List<String> playersA;
+  Iterator<String> teamB,playerB;
+
+  teams.sort(
+        (a, b) {
+          return a.compareTo(b);
+        }
+  );
+  
+  teamB = teams.iterator;
+  while (teamB.moveNext()) {
+    playersA = new List<String>();
+    playerB = players.keys.iterator;
+    
+    while (playerB.moveNext()) {
+        if (teamB.current == players[playerB.current]){
+          playersA.add(playerB.current);
+        }
+    }
+    
+    teamsList.putIfAbsent(teamB.current, () => playersA); 
   }
-  return map;
+  
+  return teamsList;
 }
