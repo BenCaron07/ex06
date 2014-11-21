@@ -43,8 +43,7 @@ String getLetterGrade(int numberGrade, Map standard) {
 }
 
 //function for exercise 6.4
-NamesList(var param)
-{
+NamesList(var param) {
   List under8 = new List();
   List equal8 = new List();
   List over8 = new List();

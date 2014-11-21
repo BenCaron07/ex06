@@ -57,21 +57,21 @@ void main() {
        'Jason Spezza' : 'Stars',
        'Tyler Seguin' : 'Stars'};
     
-    List<String> teams = ['Ducks', 'Coyotes', 'Stars'];
-    Map<String, List<String>> teamsList;
-    Iterator<String> teamB, playerB;
+  List<String> teams = ['Ducks', 'Coyotes', 'Stars'];
+  Map<String, List<String>> teamsList;
+  Iterator<String> teamB, playerB;
     
-    teamsList = teamRoster(players, teams);
+  teamsList = teamRoster(players, teams);
     
-    teamB = teamsList.keys.iterator;
-    while (teamB.moveNext()) {
-      print('List of players from the ${teamB.current}:');
-      
-      playerB = teamsList[teamB.current].iterator;
-      while (playerB.moveNext()) {
-            print('- ${playerB.current}');
-      }
+  teamB = teamsList.keys.iterator;
+  while (teamB.moveNext()) {
+    print('List of players from the ${teamB.current}:');
+    
+    playerB = teamsList[teamB.current].iterator;
+    while (playerB.moveNext()) {
+          print('- ${playerB.current}');
     }
-        
   }
+        
+}
     

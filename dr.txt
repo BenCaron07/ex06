@@ -1,5 +1,25 @@
 ex06
 
+18/20
+
+6.4
+-1
+attention: formatage (voir: https://www.dartlang.org/articles/style-guide/)
+NamesList(var param) {
+-->
+namesList(List param) {
+Se il vous plaît, utiliser les types pour des paramètres de fonctions.
+
+6.5
+-1
+Prepare two LISTS, one with the names of players and their clubs, 
+and the other with the names of clubs. Make the third LIST...
+Map<String, List<String>> teamRoster(Map players, List<String> teams) {
+-->
+List teamRoster(List players, List teams) {
+
+---
+
 14/20
 
 -1
